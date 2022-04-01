@@ -1,0 +1,24 @@
+{
+  "name": "instgram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "firefox": "0.0.1",
+    "puppeteer": "^9.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksyp-7/instgram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksyp-7/instgram/issues"
+  },
+  "homepage": "https://github.com/ksyp-7/instgram#readme"
+}
