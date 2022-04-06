@@ -13,9 +13,9 @@ const fs = require("fs");
     await page.goto("https://www.instagram.com/accounts/login/");
     await page.waitForSelector('input[name="username"]');
     //enter Username
-    await page.type('input[name="username"]', "7_ksyp");
+    await page.type('input[name="username"]', "YOUR USERNAME");
     //enter Password
-    await page.type('input[name="password"]', "K@$#y@P20.");
+    await page.type('input[name="password"]', "YOUR PASSWORD");
     await page.click('button[type="submit"]');
 
     await page.waitFor(6000);
