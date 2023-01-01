@@ -16,12 +16,23 @@ async function cancelAllFollowRequests(username, password, pendingFollowRequests
     return request.string_list_data[0].value;
   });
   // Cancel the follow requests
-  await Promise.all(userIds.map(async (userId) => {
-    userId = await ig.user.getIdByUsername(userId);
-    ig.friendship.destroy(userId);
-    
-  }));
+  console.log("You have total "+userIds.length+" pending follow request");
+
+  async function cancelRequest(usernames) {
+    for (const username of usernames) {
+      console.log("Cancelling request for => "+username)
+      const userId = await ig.user.getIdByUsername(username);
+      await ig.friendship.destroy(userId);
+      console.log("Cancelled request for => "+username)
+    }
+  }
+
+  cancelRequest(userIds).then(() => {
+    console.log('Your All Pending Request has been cancelled');
+  }).catch((error) => {
+    console.error(error);
+  });    
 }
 
 // Example usage: cancel all follow requests
-cancelAllFollowRequests('userName', 'Password', pendingFollowRequests);
+cancelAllFollowRequests('7ksyp', 'SonicMaster', pendingFollowRequests);
