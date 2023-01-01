@@ -9,7 +9,7 @@ Before using this tool, you will need to install the following dependencies:
 - [Node.js](https://nodejs.org/)
 - [NPM](https://www.npmjs.com/)
 - [instagram-private-api](https://www.npmjs.com/package/instagram-private-api)
-- Your Instagram data which can be download from your own install ID.
+- Your Instagram data in JSON formate which can be download from your own install ID .
 
 ## Installation
 To install the tool, clone this repository and navigate to the project directory:

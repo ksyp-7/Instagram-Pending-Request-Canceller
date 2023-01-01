@@ -35,4 +35,4 @@ async function cancelAllFollowRequests(username, password, pendingFollowRequests
 }
 
 // Example usage: cancel all follow requests
-cancelAllFollowRequests('7ksyp', 'SonicMaster', pendingFollowRequests);
+cancelAllFollowRequests('UserName', 'Password', pendingFollowRequests);
